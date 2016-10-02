@@ -27,6 +27,16 @@ public class BookShopBean {
 		v.addElement(item);
 		
 	}
+	public void deleteItem(String item) {
+		
+		for (int i = 0; i < v.size(); i++){
+			if (v.get(i).equals(item)) {
+				v.remove(i);
+				break;
+			}
+		}
+	}
+	
 	public String [] getItems(){
 		String[] s=new String[v.size()];
 		v.copyInto(s);
@@ -37,6 +47,9 @@ public class BookShopBean {
 			addItem(item);
 		if(submit.equals("¹ºÂò"))
 			addItem(item);
+		if(submit.equals("É¾³ý"))
+			deleteItem(item);
+		
 		reset();	
 	}
 	private void reset() {
