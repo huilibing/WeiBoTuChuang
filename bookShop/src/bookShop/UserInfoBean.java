@@ -17,9 +17,3 @@ public class UserInfoBean {
 	}
 
 }
-//<script type="text/javascript" src="bootstrap/dist/js/bootstrap.js" />
-//<script type="text/javascript" src="bootstrap/dist/js/bootstrap.min.js" />
-//<div class="form-group center">
-//<button type="submit" name="submit" class="btn btn-info">¹ºÂò</button>
-//
-//</div>

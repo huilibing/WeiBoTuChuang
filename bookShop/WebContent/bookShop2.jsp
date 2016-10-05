@@ -29,6 +29,7 @@
 <br>
 <div class="form-group center">
 <button type="submit" name="submit" class="btn btn-info" value="购买">购买</button>
+ <button type="submit" name="submit" class="btn btn-danger" value="删除">删除</button>
   &nbsp;
       &nbsp;
      <a href="./index.htm">注销登录？</a>
