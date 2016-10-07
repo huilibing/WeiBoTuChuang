@@ -11,7 +11,7 @@
 <body>
 	<div id="container">
          <div id="container2">
-   <jsp:useBean id="cart" scope="session" class="bookShop.BookShopBean" />
+   <jsp:useBean id="cart" scope="session" class="sccc.soft1532.BookShopBean" />
    <jsp:setProperty property="*" name="cart"/>
    <%   
             cart.processRequest(request);

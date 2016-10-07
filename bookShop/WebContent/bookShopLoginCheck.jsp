@@ -9,7 +9,7 @@
 <body bgcolor="red">
 
 
-<jsp:useBean id="user" scope="session" class="bookShop.UserInfoBean" />
+<jsp:useBean id="user" scope="session" class="sccc.soft1532.UserInfoBean" />
 
 <jsp:setProperty property="*" name="user"/>
 

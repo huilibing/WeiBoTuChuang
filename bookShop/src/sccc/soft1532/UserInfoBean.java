@@ -1,4 +1,4 @@
-package bookShop;
+package sccc.soft1532;
 
 public class UserInfoBean {
 	private String email;
