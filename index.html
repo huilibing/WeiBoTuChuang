@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+		<!-- 新 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+		<style>
+/*  body{
+	background-image: url(bg.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;-moz-background-size: cover;
+}    */
+p{
+	text-align: center;
+}	
+
+img{
+	
+	max-width:100%;
+	display:block;
+	
+}
+</style>
+
+</head>
+
+
+
+<body>
+		<div style="width: 400px;margin-left: auto;  margin-right: auto;">
+			<div class="panel panel-primary" style="margin:1% 1% 1% 1%;background: rgba(255, 251, 251, 0.7)">
+				<div class="panel-body" style="text-align: center;">
+
+
+	                        <center>
+		
+                    <img src="logo.png">
+
+<font size="6" class="text-success">新浪图床上传</font>
+<br />
+<br />
+<button class="btn btn-success btn-lg btn-block">
+	<input type="file" id="选图" class="text-danger">
+	
+</button>
+
+<br />
+
+<br />
+ <div class="form-group has-success">
+ 	
+ 	<p id="inp"></p>
+</div>
+
+
+<br />
+<a href="" id="link" target="_blank"><img id="图片"></a>
+<br />
+<br />
+<div class="form-group has-success">
+<div class="input-group-addon">Html page By 西门吹雪</div>
+</div>
+
+                           </center>
+
+			</div>
+	    </div>
+	</div>
+</body>
+
+</html>
+
+
+
+
+
+<script src="up.itorr.js"></script>
+
+<script>
+选图.onchange=function(){
+	if(!this.files||!this.files[0])
+		return alert('删除成功！或选取文件出错！')
+
+	var 图片文件=this.files[0]
+
+	if(图片文件.type.indexOf('image')!=0)
+		return alert('这不是一个图像或音频！')
+	
+	UP(图片文件,function(pid){
+		
+		图片.src='http://ww2.sinaimg.cn/large/'+pid +'.jpg';
+       link.href='http://ww2.sinaimg.cn/large/'+pid +'.jpg';
+       	inp.innerHTML='<div class="input-group-addon">请将下面生成的UBB代码插入帖子</div><input class="form-control" value='+'[img]http://ww2.sinaimg.cn/large/'+pid +'.jpg[/img] />'
+       	
+	},function(){
+		alert('上传文件出错了！')
+	},function(进度){
+		inp.innerHTML='上传进度为：'+进度*100+'%'
+	})
+}
+
+</script>
