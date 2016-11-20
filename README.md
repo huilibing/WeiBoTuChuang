@@ -5,6 +5,6 @@
 
 * 演示：http://vpn.ximcx.cn/up/
 
-* JS接口(修改自)来自：https://github.com/itorr/UP
+* JS接口来自(页面修改自)：https://github.com/itorr/UP
 
 
